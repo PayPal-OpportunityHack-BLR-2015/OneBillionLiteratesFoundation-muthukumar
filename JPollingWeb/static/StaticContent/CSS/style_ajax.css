@@ -1,0 +1,871 @@
+#loading-mask {
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	z-index: 20000;
+	background-color: white;
+}
+
+#loading {
+	position: absolute;
+	left: 45%;
+	top: 40%;
+	padding: 2px;
+	z-index: 20001;
+	height: auto;
+}
+
+#loading img {
+	margin-bottom: 5px;
+}
+
+#loading .loading-indicator {
+	background: white;
+	color: #555;
+	font: bold 13px tahoma, arial, helvetica;
+	padding: 10px;
+	margin: 0;
+	text-align: center;
+	height: auto;
+}
+
+#x-window-message-container {
+	position: absolute !important;
+	width: 100% !important;
+	top: 0 !important;
+}
+
+.x-axi-loading-mask {
+	background: none;
+	border: none !important;
+	padding: 0 !important;
+	top: 2px !important;
+	z-index: 20000;
+}
+
+.x-axi-loading-mask .ext-el-mask {
+	display: none;
+}
+
+.x-axi-loading-mask .x-mask-loading {
+	background: none;
+	border: none;
+	padding: 0;
+	margin: 0;
+	top: 0;
+	left: 0;
+	height: 100%;
+	position: relative;
+	display: inline;
+}
+
+.x-axi-loading-mask .x-mask-loading div {
+	padding: 0;
+	border: none;
+	background: none;
+}
+
+.x-axi-loading-mask .x-mask-loading .tlb {
+	background:
+		url(../private/ajax/Resources/images/axitheme-classic/x-axi-loading-message-bg.png)
+		no-repeat top left;
+	font: bold 11px Arial, sans-serif;
+	padding-top: 10px;
+	padding-bottom: 4px;
+}
+
+.x-axi-loading-mask .x-mask-loading .tlb span {
+	background:
+		url(../private/ajax/Resources/images/axitheme-classic/grid-ajax-loader.gif)
+		no-repeat 8px 0;
+	padding: 1px 0 1px 30px;
+	display: block;
+}
+
+.x-axi-loading-mask .x-mask-loading .trb {
+	background:
+		url(../private/ajax/Resources/images/axitheme-classic/x-axi-loading-message-bg.png)
+		no-repeat top right;
+	width: 10px;
+}
+
+.x-axi-loading-mask .x-mask-loading .brb {
+	background:
+		url(../private/ajax/Resources/images/axitheme-classic/x-axi-loading-message-bg.png)
+		no-repeat bottom right;
+	height: 7px;
+	font-size: 1px;
+	line-height: 1px;
+}
+
+.x-axi-loading-mask .x-mask-loading .blb {
+	background:
+		url(../private/ajax/Resources/images/axitheme-classic/x-axi-loading-message-bg.png)
+		no-repeat bottom left;
+	height: 7px;
+	font-size: 1px;
+	line-height: 1px;
+}
+
+.errorContainer {
+	z-index: 20001;
+	width: 100%;
+	height: 100%;
+	background: #F6F6F3;
+	position: relative;
+}
+
+.errorContainer .wrap {
+	width: 614px;
+	background: url(/images/standard/main-container-lrbrd.gif);
+	text-align: left;
+	position: absolute;
+	left: 50%;
+	margin-left: -307px;
+	top: 50%;
+	margin-top: -100px;
+}
+
+.errorContainer .elogo {
+	width: 249px;
+	height: 46px;
+	font-size: 1px;
+	background: url(/images/standard/elogo.gif);
+	position: absolute;
+	left: 35px;
+	top: -30px;
+}
+
+.errorContainer .topBorder {
+	background: url(/images/standard/main-container-tbrd.gif);
+	height: 4px;
+	font-size: 1px;
+}
+
+.errorContainer .topBorder .leftCorner {
+	background: url(/images/standard/main-container-tlc.gif);
+	width: 8px;
+	height: 4px;
+	font-size: 1px;
+	float: left;
+}
+
+.errorContainer .topBorder .rightCorner {
+	background: url(/images/standard/main-container-trc.gif);
+	width: 8px;
+	height: 4px;
+	font-size: 1px;
+	float: right;
+}
+
+.errorContainer .bottomBorder {
+	background: url(E:/Test/Design/WebContent/Images/main-container-bbrd.gif);
+	height: 4px;
+	font-size: 1px;
+	margin-top: 20px;
+}
+
+.errorContainer .bottomBorder .leftCorner {
+	background: url(E:/Test/Design/WebContent/Images/main-container-blc.gif)
+		;
+	width: 8px;
+	height: 4px;
+	font-size: 1px;
+	float: left;
+}
+
+.errorContainer .bottomBorder .rightCorner {
+	background: url(E:/Test/Design/WebContent/Images/main-container-brc.gif);
+	width: 8px;
+	height: 4px;
+	font-size: 1px;
+	float: right;
+}
+
+.errorContainer .content {
+	width: 490px;
+	margin: 18px auto 0 auto;
+	background: #585851 url(E:/Test/Design/WebContent/Images/nojs-bg.jpg) no-repeat;
+	padding: 15px 0 13px 70px;
+	font-family: Tahoma, Arial, sans-serif;
+	color: #fff;
+}
+
+html,body {
+	margin: 0;
+	padding: 0;
+	height: 100%;
+}
+
+body {
+	background: url(E:/Test/Design/WebContent/Images/ax_bg.gif);
+}
+
+.main-container {
+	background: url(E:/Test/Design/WebContent/Images/main-container-top-bg.png) no-repeat top
+		left;
+	width: 536px;
+	height: 400px;
+	margin: auto;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	margin-top: -200px;
+	margin-left: -268px;
+	padding: 39px 0 0 0;
+}
+
+.main-container .center-container {
+	background: url(E:/Test/Design/WebContent/Images/lr-shadow.png)
+		no-repeat center left;
+}
+
+.main-container .center-inner-container {
+	margin: 0 28px;
+	padding: 0 20px;
+	border-left: 1px solid #ccccc6;
+	border-right: 1px solid #9a9a95;
+	background: #f6f6f6;
+}
+
+/*
+* Logo here
+*/
+.main-container .logo {
+	margin-left: 5px;
+	background: url() no-repeat top
+		left;
+	width: 159px;
+	height: 43px;
+}
+
+.main-container .alogo {
+	background: url(../images/ajax/alogo.png) no-repeat top left;
+	width: 161px;
+	height: 173px;
+	position: absolute;
+	left: -130px;
+	top: -20px;
+	z-index: 100;
+}
+
+.main-container .copyright {
+	background: url(E:/Test/Design/WebContent/Images/main-container-bottom-bg.png) no-repeat
+		top left;
+	height: 79px;
+	padding: 30px 0 0 74px;
+}
+
+.main-container .copyright p {
+	margin: 0;
+	font: normal 11px Arial, sans-serif;
+	color: #333;
+	line-height: 15px;
+}
+
+.main-container .copyright a {
+	color: #333;
+	border-bottom: 1px dotted #51514f;
+	text-decoration: none;
+}
+
+.main-container .form-container * {
+	overflow: visible !important;
+}
+
+.main-container .form-container {
+	background: url(E:/Test/Design/WebContent/Images/ax_bg.gif);
+	min-height: 220px;
+	padding: 2px 2px 0 2px;
+	position: relative;
+	margin: 16px 0 0 0;
+}
+
+.main-container .form-container .x-panel-bc {
+	height: 51px;
+}
+
+.main-container .form-container .x-panel-btns-ct {
+	padding: 0;
+}
+
+.main-container .form-container .x-panel-btns {
+	margin: 6px 16px 0 0;
+}
+
+.main-container .form-container .x-panel-ml,.main-container .form-container .x-panel-mr,.main-container .form-container .x-panel-mc,.main-container .form-container .x-panel-bl,.main-container .form-container .x-panel-br,.main-container .form-container .x-panel-bc
+	{
+	background: none;
+	padding: 0;
+}
+
+.main-container .form-container .x-panel-tl {
+	border: none;
+}
+
+.main-container .form-container .x-form-item {
+	margin-bottom: 4px;
+}
+
+.x-axi-button {
+	position: absolute;
+	bottom: -39px;
+	right: 10px;
+	min-width: 60px;
+}
+
+div.x-axi-button-container {
+	position: static;
+}
+
+.x-axi-button input {
+	background: none;
+	border: 0 solid black;
+	width: auto !important;
+	cursor: pointer;
+	color: #d4cecd;
+	font: bold 14px Arial, sans-serif;
+	text-shadow: #2c2c29 -1px -1px;
+	height: 29px;
+	background: url(E:/Test/Design/WebContent/Images/axi-window-buttons-sprite.png) no-repeat
+		top left;
+	float: left;
+	padding-left: 8px;
+	padding-right: 6px;
+	width: 100%;
+}
+
+.x-axi-button .x-axi-button-right {
+	float: left;
+	height: 29px;
+	width: 2px;
+	background: url(E:/Test/Design/WebContent/Images/axi-window-buttons-sprite.png) no-repeat
+		top right;
+}
+
+.x-axi-button-over input {
+	background: url(E:/Test/Design/WebContent/Images/axi-window-buttons-sprite.png) no-repeat
+		left -29px;
+	color: #fff;
+}
+
+.x-axi-button-over .x-axi-button-right {
+	background: url(E:/Test/Design/WebContent/Images/axi-window-buttons-sprite.png) no-repeat
+		right -29px;
+}
+
+.x-axi-button-click input {
+	background: url(E:/Test/Design/WebContent/Images/axi-window-buttons-sprite.png) no-repeat
+		bottom left;
+}
+
+.x-axi-button-click .x-axi-button-right {
+	background: url(E:/Test/Design/WebContent/Images/axi-window-buttons-sprite.png) no-repeat
+		bottom right;
+}
+
+.x-axi-changepass .x-axi-button .x-btn {
+	width: auto !important;
+	min-width: 60px;
+	height: 29px;
+	cursor: pointer;
+	top: -49px;
+	position: relative;
+}
+
+.ext-ie .x-axi-button .x-btn {
+	top: -46px;
+}
+
+.x-axi-changepass .x-axi-button .x-btn-left {
+	background: url(E:/Test/Design/WebContent/Images/axi-window-buttons-sprite.png) no-repeat
+		top left;
+}
+
+.x-axi-changepass .x-axi-button .x-btn-focus .x-btn-left {
+	background: url(E:/Test/Design/WebContent/Images/axi-window-buttons-sprite.png) no-repeat
+		top left;
+}
+
+.x-axi-changepass .x-axi-button .x-btn-over .x-btn-left {
+	background: url(E:/Test/Design/WebContent/Images/axi-window-buttons-sprite.png) no-repeat
+		left -30px;
+}
+
+.x-axi-changepass .x-axi-button .x-btn-click .x-btn-left {
+	background: url(E:/Test/Design/WebContent/Images/axi-window-buttons-sprite.png) no-repeat
+		bottom left;
+}
+
+.x-axi-changepass .x-axi-button .x-btn-center {
+	background: url(E:/Test/Design/WebContent/Images/axi-window-buttons-sprite.png) no-repeat
+		-20px 0;
+}
+
+.x-axi-changepass .x-axi-button .x-btn-focus .x-btn-center {
+	background: url(E:/Test/Design/WebContent/Images/axi-window-buttons-sprite.png) no-repeat
+		-20px 0;
+}
+
+.x-axi-changepass .x-axi-button .x-btn-over .x-btn-center {
+	background: url(E:/Test/Design/WebContent/Images/axi-window-buttons-sprite.png) no-repeat
+		-20px -30px;
+}
+
+.x-axi-changepass .x-axi-button .x-btn-click .x-btn-center {
+	background: url(E:/Test/Design/WebContent/Images/axi-window-buttons-sprite.png) no-repeat
+		-20px bottom;
+}
+
+.x-axi-changepass .x-axi-button .x-btn-right {
+	background: url(E:/Test/Design/WebContent/Images/axi-window-buttons-sprite.png) no-repeat
+		top right;
+}
+
+.x-axi-changepass .x-axi-button .x-btn-focus .x-btn-right {
+	background: url(E:/Test/Design/WebContent/Images/axi-window-buttons-sprite.png) no-repeat
+		top right;
+}
+
+.x-axi-changepass .x-axi-button .x-btn-over .x-btn-right {
+	background: url(E:/Test/Design/WebContent/Images/axi-window-buttons-sprite.png) no-repeat
+		right -30px;
+}
+
+.x-axi-changepass .x-axi-button .x-btn-click .x-btn-right {
+	background: url(E:/Test/Design/WebContent/Images/axi-window-buttons-sprite.png) no-repeat
+		bottom right;
+}
+
+.x-axi-changepass .x-axi-button .x-btn-center button.x-btn-text {
+	background: none;
+	border: none;
+	color: #d4cecd;
+	font: bold 14px Arial, sans-serif;
+	text-shadow: #2c2c29 -1px -1px;
+}
+
+.x-axi-changepass .x-axi-button .x-btn-over .x-btn-center button.x-btn-text
+	{
+	color: #fff;
+}
+
+.x-axi-textfield {
+	border: 1px solid #fff;
+	border-left: 1px solid #838383;
+	border-top: 1px solid #838383;
+	font: normal 11px Arial, sans-serif;
+	padding-left: 2px;
+}
+
+.x-axi-password {
+	font-family: Tahoma, sans-serif;
+}
+
+.x-axi-password-caps {
+	background: url(/images/ajax-password-caps.gif) no-repeat scroll right
+		center white;
+}
+
+.x-form-item {
+	position: relative;
+	margin-bottom: 10px;
+}
+
+.x-axi-label label {
+	font: bold 11px Arial, sans-serif;
+	color: #333;
+	line-height: 20px;
+}
+
+.x-axi-fieldset {
+	background: url(E:/Test/Design/WebContent/Images/fieldset-bg.png);
+	border: none;
+	padding: 30px 32px 28px 32px !important;
+	margin: 0;
+}
+
+.x-axi-retypepass-fieldset {
+	padding: 30px 10px 28px 20px !important;
+}
+
+.x-axi-checkbox {
+	margin-left: 14px;
+}
+
+.x-axi-checkbox .x-form-check {
+	background-image: url(E:/Test/Design/WebContent/Images/row-check-sprite.gif);
+	height: 14px;
+}
+
+.x-axi-dark-label.x-axi-checkbox .x-form-check {
+	height: 16px;
+}
+
+.x-axi-checkbox .x-form-check-over .x-form-check {
+	background-position: top left;
+}
+
+.x-axi-checkbox .x-form-check-checked .x-form-check {
+	background-position: -25px 0;
+}
+
+.x-axi-checkbox .x-form-cb-label {
+	width: auto;
+	font: normal 11px Arial, sans-serif;
+	color: #333;
+}
+
+.x-axi-horz-brown-separator {
+	border: none;
+	border-bottom: 1px solid #ebebe7;
+	border-top: 1px solid #afa8a7;
+	margin: 9px 0;
+}
+
+.ext-ie .x-axi-horz-brown-separator {
+	margin: 4px 0;
+}
+
+.x-axi-flat-button {
+	background: #babab5;
+	border: 1px solid #d9d9d6;
+	border-left: 1px solid #cacac6;
+	border-right: 1px solid #71716e;
+	border-bottom: 1px solid #474745;
+	padding: 2px 0;
+	height: 21px;
+}
+
+.x-axi-flat-button .x-btn-left {
+	background: none;
+	display: none;
+}
+
+.x-axi-flat-button .x-btn-right {
+	background: none;
+	display: none;
+}
+
+.x-axi-flat-button .x-btn-center {
+	background: none;
+}
+
+.x-axi-flat-button .x-btn-over {
+	background: #c9c9c5;
+	border: 1px solid #e1e1df;
+	border-left: 1px solid #d5d5d2;
+	border-right: 1px solid #7a7a78;
+	border-bottom: 1px solid #4c4c4b;
+}
+
+.x-axi-flat-button .x-btn-click {
+	background: #d9d9d4;
+	border: 1px solid #686865;
+	border-left: 1px solid #686865;
+	border-right: 1px solid #e6e6e3;
+	border-bottom: 1px solid #e6e6e3;
+}
+
+.x-axi-flat-button .x-btn-text {
+	color: #333;
+}
+
+.x-axi-brown-combo .x-form-field {
+	height: 18px;
+}
+
+.x-axi-brown-combo .x-form-field-wrap {
+	background: #babab5
+		url(../private/ajax/Resources/images/axitheme-classic/adv-search-select-bg.gif)
+		no-repeat center right;
+	border: 1px solid #d9d9d6;
+	border-bottom: 1px solid #474745;
+	border-left: 1px solid #cacac6;
+	border-right: 1px solid #71716e;
+	color: #333;
+	display: table;
+}
+
+.x-axi-brown-combo .x-form-field-wrap .x-form-trigger {
+	display: none;
+}
+
+.x-axi-brown-combo .x-form-field-wrap .x-form-field {
+	background: none;
+	border: none;
+}
+
+.x-axi-brown-combo .x-axi-combo-over {
+	background-color: #c9c9c5;
+	border-top: 1px solid #e1e1df;
+	border-left: 1px solid #d5d5d2;
+	border-bottom: 1px solid #4c4c4b;
+	border-right: 1px solid #7a7a78;
+}
+
+.x-axi-brown-combo .x-axi-combo-click {
+	background-color: #d9d9d4;
+	border-top: 1px solid #686865;
+	border-left: 1px solid #686865;
+	border-bottom: 1px solid #e6e6e3;
+	border-right: 1px solid #e6e6e3;
+}
+
+.x-axi-brown-list {
+	border: 1px solid #e1e1df;
+	border-bottom: 1px solid #4c4c4b;
+	border-right: 1px solid #7a7a78;
+	border-left: 1px solid #d5d5d2;
+	padding: 2px;
+	background: #c9c9c5;
+}
+
+.x-axi-brown-list .x-combo-list-inner {
+	background: none;
+}
+
+.x-axi-brown-list .x-combo-list-item {
+	border: 1px solid #c9c9c5;
+	cursor: pointer;
+}
+
+.x-axi-brown-list .x-combo-selected,.x-axi-brown-selected {
+	background: #acaca4;
+	border: 1px solid #acaca4 !important;
+}
+
+.x-axi-domains-combo {
+	top: 0 !important;
+}
+
+.pipe {
+	line-height: 20px;
+	text-align: center;
+}
+
+.x-axi-white-combo .x-form-field {
+	height: 18px;
+}
+
+.x-axi-white-combo .x-form-field-wrap {
+	border: 1px solid #616161;
+	border-left: 1px solid #9b9b9b;
+	border-bottom: 1px solid #fff;
+	border-right: none;
+	background: #fff url(E:/Test/Design/WebContent/Images/x-axi-white-trigger.gif) no-repeat
+		right center;
+	display: table;
+	width: auto !important;
+}
+
+.x-axi-white-combo .x-form-field-wrap .x-form-field {
+	background: none;
+	border: none;
+	float: left;
+}
+
+.x-axi-white-combo .x-form-trigger {
+	background: none;
+	border: none;
+	position: static;
+	height: 18px !important;
+}
+
+.x-axi-white-list {
+	border: 1px solid #dadad6;
+	border-bottom: 1px solid #93938f;
+	border-right: 1px solid #93938f;
+	border-top: 1px solid #dadad6;
+	padding: 1px;
+	background: #fff;
+}
+
+.x-axi-white-list .x-combo-selected,.x-axi-white-selected {
+	background: #e0e0dc;
+	border: none !important;
+}
+
+.x-axi-white-list .x-combo-list-item {
+	border: none;
+}
+
+.en-flag .x-form-field-wrap .x-form-field,.en-flag.x-combo-list-item {
+	padding-left: 22px;
+	background-image: url(E:/Test/Design/WebContent/Images/axi-flags.gif);
+	background-repeat: no-repeat;
+	background-position: 2px 3px;
+}
+
+.x-axi-link * {
+	background: none;
+}
+
+.x-axi-link .x-btn-center button {
+	color: #333;
+	border-bottom: 1px dotted #51514F;
+	z-index: 200;
+	position: relative;
+}
+
+#cookiesDisabled {
+	display: none;
+}
+
+.x-axi-window-message td {
+	background-image:
+		url(../private/ajax/Resources/images/axitheme-classic/x-axi-info-message-bg.png)
+		;
+	background-color: transparent !important;
+}
+
+.x-axi-window-message-error td {
+	background-image:
+		url(../private/ajax/Resources/images/axitheme-classic/x-axi-error-message-bg.png)
+		;
+	background-color: transparent !important;
+}
+
+.x-axi-window-message-warning td {
+	background-image:
+		url(../private/ajax/Resources/images/axitheme-classic/x-axi-warning-message-bg.png)
+		;
+	background-color: transparent !important;
+}
+
+.x-axi-window-message .x-box-ml {
+	width: 5px;
+	background-position: top left;
+}
+
+.x-axi-window-message .x-box-mc {
+	background-position: -8px 0;
+	font: bold 12px Arial, sans-serif;
+	color: #fff;
+	padding-top: 10px;
+}
+
+.x-axi-window-message .x-box-mr {
+	width: 15px;
+	background-position: top right;
+	vertical-align: top;
+}
+
+.x-axi-window-message .x-box-bl {
+	background-position: bottom left;
+	height: 8px;
+	font-size: 1px;
+}
+
+.x-axi-window-message .x-box-bc {
+	background-position: -8px bottom;
+	height: 8px;
+	font-size: 1px;
+}
+
+.x-axi-window-message .x-box-br {
+	background-position: bottom right;
+	height: 8px;
+	font-size: 1px;
+}
+
+.x-axi-window-message a {
+	width: 16px;
+	height: 18px;
+	display: block;
+	font-size: 1px;
+	z-index: 20001;
+}
+
+.x-form-invalid-tip .x-tip-tl {
+	background:
+		url(../private/ajax/Resources/images/axitheme-classic/x-axi-tip-sprite.png)
+		no-repeat scroll 0 0;
+	overflow: hidden;
+	padding-left: 9px;
+	margin-top: -10px;
+	margin-left: -2px;
+}
+
+.x-form-invalid-tip .x-tip-tr {
+	background:
+		url(../private/ajax/Resources/images/axitheme-classic/x-axi-tip-sprite.png)
+		no-repeat scroll right 0;
+	overflow: hidden;
+	padding-right: 9px;
+}
+
+.x-form-invalid-tip .x-tip-tc {
+	background: transparent
+		url(../private/ajax/Resources/images/axitheme-classic/x-axi-tip-sprite.png)
+		no-repeat scroll 0 -188px;
+	overflow: hidden;
+	padding-top: 9px;
+}
+
+.x-form-invalid-tip .x-tip-ml {
+	background:
+		url(../private/ajax/Resources/images/axitheme-classic/x-axi-tip-sprite.png)
+		no-repeat scroll 0 -350px;
+	padding-left: 9px;
+	margin-left: -2px;
+}
+
+.x-form-invalid-tip .x-tip-mr {
+	background:
+		url(../private/ajax/Resources/images/axitheme-classic/x-axi-tip-sprite.png)
+		no-repeat scroll right -1100px;
+	padding-right: 9px;
+}
+
+.x-form-invalid-tip .x-tip-bl {
+	background:
+		url(../private/ajax/Resources/images/axitheme-classic/x-axi-tip-sprite.png)
+		no-repeat scroll 0 -153px;
+	padding-left: 9px;
+	margin-left: -2px;
+}
+
+.x-form-invalid-tip .x-tip-br {
+	background:
+		url(../private/ajax/Resources/images/axitheme-classic/x-axi-tip-sprite.png)
+		no-repeat scroll right -153px;
+	padding-right: 9px;
+}
+
+.x-form-invalid-tip .x-tip-bc {
+	background:
+		url(../private/ajax/Resources/images/axitheme-classic/x-axi-tip-sprite.png)
+		no-repeat scroll right -341px;
+	height: 9px;
+}
+
+.x-form-invalid-tip .x-tip-header {
+	display: none;
+}
+
+.ext-ie .x-axi-link button {
+	border-bottom: none;
+	background:
+		url(../private/ajax/Resources/images/axitheme-classic/panel-title-underline-bkgr.gif)
+		repeat-x left bottom;
+}
+
+.x-axi-password-warning {
+	font: bold 14px Arial, sans serif;
+	letter-spacing: -1px;
+	color: #F06C3d;
+	text-align: center !important;
+	display: block;
+	padding-right: 4px;
+	padding-bottom: 20px;
+}
+
+.domainname-container {
+	position: absolute;
+	top: 32px;
+	right: 58px;
+	z-index: 2;
+}

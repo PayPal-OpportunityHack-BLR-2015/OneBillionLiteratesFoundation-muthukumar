@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+	<!-- Generated Mar 8, 2012 4:57:52 PM by Hibernate Tools 3.3.0.GA -->
+<hibernate-mapping>
+	<class name="com.project.jpolling.to.answer.QATO" table="qa">
+		<id name="id" type="long">
+			<column name="id" />
+			<generator class="native" >
+            	<param name="sequence">SEQ_QA</param>
+            </generator>
+		</id>
+		<many-to-one name="question"
+			class="com.project.jpolling.to.question.QuestionTO" fetch="join">
+			<column name="q_id" />
+		</many-to-one>
+		<many-to-one name="answer"
+			class="com.project.jpolling.to.answer.AnswerTO" fetch="join">
+			<column name="ans_id" />
+		</many-to-one>
+	</class>
+</hibernate-mapping>

@@ -1,0 +1,172 @@
+<!DOCTYPE html PUBLIC '-//W3C//DTD XHTML 1.0 Transitional//EN' 'http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd'>
+<html xmlns='http://www.w3.org/1999/xhtml'>
+<head>
+<title>JPolling System</title>
+<link href='/JPollingWeb/StaticContent/CSS/JStyle.css' rel='stylesheet'
+	type='text/css'>
+<script type='text/javascript'
+	src='/JPollingWeb/StaticContent/JS/prototype.js'></script>
+<script type='text/javascript'
+	src='/JPollingWeb/StaticContent/JS/jsProgressBarHandler.js'></script>
+<script type='text/javascript'
+	src='/JPollingWeb/StaticContent/JS/Jscript.js'></script>
+<script type='text/javascript'
+	src='/JPollingWeb/StaticContent/amcharts/flash/swfobject.js'></script>
+<script type='text/javascript'
+	src='/JPollingWeb/StaticContent/amcharts/amcharts.js'></script>
+<script type='text/javascript'
+	src='/JPollingWeb/StaticContent/amcharts/amfallback.js'></script>
+<script type='text/javascript'
+	src='/JPollingWeb/StaticContent/amcharts/raphael.js'></script>
+</head>
+<body>
+<div id='total_page' align='center'>
+<table width='100%' class='body_content'>
+	<tbody>
+		<tr>
+			<td>
+			<div class='headings'>
+			<table width='100%'>
+				<tbody>
+					<tr>
+						<td width='6%' align='right'><img width='32' height='32'
+							alt='X' src='/JPollingWeb/StaticContent/Images/report.png'></td>
+						<td width='63%'>
+						<h4 align='left' class='quick_links'>Reports</h4>
+						</td>
+						<td width='31%'>
+						<table align='right'>
+							<tbody>
+								<tr>
+									<td class='quick_links'>&nbsp;</td>
+								</tr>
+							</tbody>
+						</table>
+						</td>
+					</tr>
+				</tbody>
+			</table>
+			</div>
+			<div>
+			<div class='headings'>Group Report</div>
+			<div id='chartdiv'
+				style='width: 600px; height: 400px; background-color: #FFFFFF'></div>
+			<input type='button' value='reload All' onclick='reloadAll();' /><input
+				type='button' value='rebuild' onclick='rebuild();' /><input
+				type='button' value='reloadData' onclick='reloadData();' />
+				<script type='text/javascript'>
+	alert('Hit');
+	var params = {
+		bgcolor : '#FFFFFF'
+	};
+	var flashVars = {
+		path : '/JPollingWeb/StaticContent/amcharts/flash/',
+		chart_data : 'A1;30\nB1;40\nC1;20\nD1;10',
+		chart_settings : '__tag_57$198_<data_type>csv__tag_57$222_<legend>__tag_57$242_0__tag_57$252_</legend>__tag_57$271_<inner_radius>30__tag_57$292_<height>7__tag_57$316_<angle>10__tag_57$334_<gradient>__tag_57$352_</pie>__tag_57$369_<start_time>1__tag_57$393_<pull_out_time>1__tag_57$422_</animation>__tag_57$450_<show>{title}__tag_57$476_<max_width>100__tag_57$497_</data_labels>__tag_57$523_'
+	};
+	window.onload = function() {
+		if (AmCharts.recommended() == 'js') {
+			var amFallback = new AmCharts.AmFallback();
+			amFallback.chartSettings = flashVars.chart_settings;
+			amFallback.chartData = flashVars.chart_data;
+			amFallback.type = 'pie';
+			amFallback.write('chartdiv');
+		} else {
+			swfobject
+					.embedSWF(
+							'/JPollingWeb/StaticContent/amcharts/flash/ampie.swf',
+							'chartdiv',
+							'600',
+							'400',
+							'8.0.0',
+							'/JPollingWeb/StaticContent/amcharts/flash/expressInstall.swf',
+							flashVars, params);
+		}
+	}
+	function reloadAll() {
+		flashMovie.reloadAll();
+	}
+	function rebuild() {
+		flashMovie.rebuild();
+	}
+	function rel
+</script>
+			<div id='data_table'>
+			<table width='100%' cellpadding='1' class='data_table'>
+				<tbody>
+					<tr class='data_table_td_head'>
+						<td width='5%' height='40'>&nbsp;</td>
+						<td width='64%'>Question</td>
+						<td width='15%'>Start date</td>
+						<td width='16%'>End date</td>
+					</tr>
+					<tr>
+						<td width='5%' height='37'><a href='#'
+							onclick=
+	loadReport(15);
+><img width='25' height='25'
+							alt='Report'
+							src='/JPollingWeb/StaticContent/Images/pie_chart.png'></a></td>
+						<td>wat u like?</td>
+						<td width='15%'>2012-03-08 00:00:00.0</td>
+						<td width='16%'>null</td>
+					</tr>
+					<tr>
+						<td width='5%' height='37'><a href='#'
+							onclick=
+	loadReport(14);
+><img width='25' height='25'
+							alt='Report'
+							src='/JPollingWeb/StaticContent/Images/pie_chart.png'></a></td>
+						<td>new question ?</td>
+						<td width='15%'>2012-03-08 00:00:00.0</td>
+						<td width='16%'>null</td>
+					</tr>
+					<tr>
+						<td width='5%' height='37'><a href='#'
+							onclick=
+	loadReport(13);
+><img width='25' height='25'
+							alt='Report'
+							src='/JPollingWeb/StaticContent/Images/pie_chart.png'></a></td>
+						<td>test this final</td>
+						<td width='15%'>2012-03-08 00:00:00.0</td>
+						<td width='16%'>null</td>
+					</tr>
+				</tbody>
+			</table>
+			</div>
+			<div class='data_table_footer' id='page_navigation'>
+			<table width='100%' align='center'>
+				<tbody>
+					<tr>
+						<td align='center'>
+						<table>
+							<tbody>
+								<tr>
+									<td width='25%'><a href=''><img width='25' height='25'
+										src='/JPollingWeb/StaticContent/Images/PreviousButton_blue.png'></a></td>
+									<td width='50%'>
+									<div align='center'>1&nbsp;/&nbsp;2</div>
+									</td>
+									<td width='25%'><a href='#' onclick=
+	loadChart();
+><img
+										width='25' height='25'
+										src='/JPollingWeb/StaticContent/Images/NextButton_blue.png'></a></td>
+								</tr>
+							</tbody>
+						</table>
+						</td>
+					</tr>
+				</tbody>
+			</table>
+			</div>
+			</div>
+			</td>
+		</tr>
+	</tbody>
+</table>
+</div>
+</body>
+</html>

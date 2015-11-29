@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app id="WebApp_ID" version="2.4" xmlns="http://java.sun.com/xml/ns/j2ee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://java.sun.com/xml/ns/j2ee http://java.sun.com/xml/ns/j2ee/web-app_2_4.xsd">
+	<display-name>JPollingWeb</display-name>
+	<servlet>
+		<description>
+		</description>
+		<display-name>JPollingServlet</display-name>
+		<servlet-name>JPollingServlet</servlet-name>
+		<servlet-class>com.project.web.JPollingServlet</servlet-class>
+	</servlet>
+	
+	<servlet>
+		<description>
+		</description>
+		<display-name>JPollingUserServlet</display-name>
+		<servlet-name>JPollingUserServlet</servlet-name>
+		<servlet-class>com.project.web.JPollingUserServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>JPollingServlet</servlet-name>
+		<url-pattern>/JPollingServlet</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>JPollingUserServlet</servlet-name>
+		<url-pattern>/JPollingUserServlet</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+        <servlet-name>FileUploadHandler</servlet-name>
+        <servlet-class>FileUploadHandler</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>FileUploadHandler</servlet-name>
+        <url-pattern>/upload</url-pattern>
+    </servlet-mapping>
+	
+	<servlet>
+		<description>
+		</description>
+		<display-name>UploadServlet</display-name>
+		<servlet-name>UploadServlet</servlet-name>
+		<servlet-class>com.project.web.UploadServlet</servlet-class>
+	</servlet>
+	<!-- <servlet-mapping>
+		<servlet-name>spring</servlet-name>
+		<url-pattern>*.html</url-pattern>
+	</servlet-mapping> -->
+	<servlet-mapping>
+		<servlet-name>UploadServlet</servlet-name>
+		<url-pattern>/UploadServlet</url-pattern>
+	</servlet-mapping>
+
+	<welcome-file-list>
+		<welcome-file>index.html</welcome-file>
+		<welcome-file>index.htm</welcome-file>
+		<welcome-file>index.jsp</welcome-file>
+		<welcome-file>default.html</welcome-file>
+		<welcome-file>default.htm</welcome-file>
+		<welcome-file>default.jsp</welcome-file>
+	</welcome-file-list>
+</web-app>

@@ -1,0 +1,42 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping>
+<class name="com.project.jpolling.to.user.UserTO" table="USERS">
+        <id name="userId" type="long">
+            <column name="USER_ID" not-null="true"/>
+            <generator class="native" >
+            	<param name="sequence">seq_user</param>
+            </generator>
+        </id>
+        <property name="password" type="string">
+            <column name="PASSWORD" not-null="true"/>
+            </property>
+        <property name="mailId" type="string">
+            <column name="MAIL_ID" not-null="false"/>
+        </property>
+        <property name="userName" type="string">
+            <column name="USER_NAME" not-null="false"/>
+        </property>
+        <property name="userType" type="string">
+            <column name="USER_TYPE" not-null="false"/>
+        </property>
+         <property name="verified" type="boolean">
+            <column name="verified"/>
+        </property>
+        <property name="address1" type="string">
+            <column name="address1" not-null="false"/>
+        </property>
+        <property name="address2" type="string">
+            <column name="address2" not-null="false"/>
+        </property>
+        <property name="city" type="string">
+            <column name="city" not-null="false"/>
+        </property>
+        <property name="state" type="string">
+            <column name="state" not-null="false"/>
+        </property>
+       
+        </class>        
+</hibernate-mapping>

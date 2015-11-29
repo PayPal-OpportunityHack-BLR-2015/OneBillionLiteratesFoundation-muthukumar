@@ -1,0 +1,5 @@
+#Tomcat publish data
+#Sat Nov 28 19:53:33 IST 2015
+org.eclipse.jst.j2ee.server\:JPollingWeb=F\:\\Study\\apache-tomcat-7.0.54\\webapps\\JPollingWeb
+org.eclipse.jst.j2ee.server\:JPollingDAO=F\:\\Study\\apache-tomcat-7.0.54\\webapps\\JPollingWeb\\WEB-INF\\lib\\JPollingDAO.jar
+org.eclipse.jst.j2ee.server\:JPollingTO=F\:\\Study\\apache-tomcat-7.0.54\\webapps\\JPollingWeb\\WEB-INF\\lib\\JPollingTO.jar

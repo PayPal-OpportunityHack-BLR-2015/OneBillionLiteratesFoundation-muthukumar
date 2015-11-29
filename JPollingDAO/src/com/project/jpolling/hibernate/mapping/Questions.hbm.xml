@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated Dec 7, 2010 10:41:50 AM by Hibernate Tools 3.2.4.GA -->
+<hibernate-mapping>
+    <class name="com.project.jpolling.to.question.QuestionTO" table="QUESTIONS">
+        <id name="id" type="long">
+            <column name="Q_ID" />
+            <generator class="native" >
+            	<param name="sequence">SEQ_QUESTION</param>
+            </generator>
+        </id>
+        <property name="question" type="string">
+            <column name="QUESTION" not-null="true"/>
+        </property>
+        <property name="startDate" type="date">
+            <column name="START_DATE" />
+        </property>
+        <property name="endDate" type="date">
+            <column name="END_DATE" />
+        </property>
+        </class>
+</hibernate-mapping>

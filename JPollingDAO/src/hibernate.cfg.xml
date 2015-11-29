@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-configuration PUBLIC
+		"-//Hibernate/Hibernate Configuration DTD 3.0//EN"
+		"http://hibernate.sourceforge.net/hibernate-configuration-3.0.dtd">
+<hibernate-configuration>
+	<session-factory>
+		<property name="hibernate.connection.driver_class">com.mysql.jdbc.Driver</property>
+		<property name="hibernate.connection.password">password</property>
+		<property name="hibernate.connection.username">muthu</property>
+		<property name="hibernate.dialect">org.hibernate.dialect.MySQLDialect</property>
+		<property name="hibernate.connection.url">
+			 jdbc:mysql://localhost/jpolling_db</property>
+		 <mapping resource="com/project/jpolling/hibernate/mapping/Users.hbm.xml" /> 
+		<mapping resource="com/project/jpolling/hibernate/mapping/Questions.hbm.xml" />
+		<mapping resource="com/project/jpolling/hibernate/mapping/Answers.hbm.xml" />
+		<mapping resource="com/project/jpolling/hibernate/mapping/Mapping.hbm.xml" />
+		<mapping resource="com/project/jpolling/hibernate/mapping/QA.hbm.xml" />
+	</session-factory>
+</hibernate-configuration>
